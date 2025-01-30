@@ -33,6 +33,7 @@ describe('Test the /add/:a/:b path', () => {
       const response = await request(app).get('/add/foo/bar');
       expect(response.statusCode).toBe(400);
       expect(response.text).toBe('Invalid input. Please provide two numbers.');
+      expect(response.text).toBe('DevOps Labs!');
     });
   });
   
